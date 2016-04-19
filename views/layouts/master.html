@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width"/>
+        <title>{{title}}</title>
+
+        <link rel="stylesheet" href="/stylesheets/bootstrap.min.css"/>
+        <link rel="stylesheet" href="/stylesheets/bootstrap-material-design.min.css"/>
+        <link rel="stylesheet" href="/stylesheets/ripples.min.css"/>
+        <link rel="stylesheet" href="/stylesheets/style.css"/>
+
+        <script src="/javascripts/jquery-1.9.1.min.js"></script>
+        <script src="/javascripts/maphandler.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVKxYF9AKGfRgkUwXPYmRM999RrBikAbU&callback=initMap"
+                async defer></script>
+    </head>
+
+    <body>
+    <div class="container-fluid map-bg">
+        {{> navbar }}
+
+        <div class="row">
+            {{{body}}}
+        </div>
+    </div>
+
+    <script src="/javascripts/bootstrap.min.js"></script>
+    <script src="/javascripts/material.min.js"></script>
+    <script src="/javascripts/ripples.min.js"></script>
+    <script src="/javascripts/spin.min.js"></script>
+
+    <script>
+        //initialize material framework
+        $(document).ready(function() {
+            $.material.init();
+        });
+    </script>
+
+    </body>
+</html>

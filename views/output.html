@@ -1,0 +1,28 @@
+<div class="row">
+    <div>
+        <h1>Start point: <span id="start">{{start}}</span></h1>
+        <h1>Destination: <span id="end">{{end}}</span></h1>
+    </div>
+
+    <center><h3><span id="status">Generating video...</span></h3></center>
+</div>
+
+<div class="row">
+    <div class="col-lg-8">
+        <div id="home-map"></div>
+    </div>
+    <div class="col-lg-4">
+        <div id="spinnerDiv"></div>
+        <video id="video" controls autoplay loop  style="display:none"></video>
+        <a id="download" download="video.webm" style="display:none">Download Webm</a>
+    </div>
+</div>
+
+<canvas id="canvas" style="display:none"></canvas>
+
+<script src="/javascripts/whammy.js"></script>
+<script src="/javascripts/videohandler.js"></script>
+<script>
+    //initialize video creation
+    isOutputPage = true;
+</script>
